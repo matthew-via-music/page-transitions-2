@@ -1,0 +1,77 @@
+:root {
+  --transition-block-col: #89f0f1;
+  /* Style as appropriate to your colour palette. */
+}
+
+body {
+  overflow: hidden;
+  color: #111;
+}
+a {
+  color: #111;
+  text-decoration: none;
+}
+.header {
+  position: absolute;
+  z-index: 200;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.header .logo {
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.header ul {
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+.header ul li .link {
+  font-size: 1.2rem;
+  margin: 5px;
+}
+
+/* TRANSITION */
+.transition-effect {
+  position: absolute;
+  z-index: 100;
+  background-color: var(--transition-block-col);
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+/* \ TRANSITION */
+
+h1 {
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+/* IMAGE BACKGROUND CONFIG */
+.home-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: yellow; /* Fallback if remote image doesn't load */
+}
+.home-overlay {
+  background: url(https://easycss.github.io/easyimage/img3.png) no-repeat;
+  background-size: cover;
+}
